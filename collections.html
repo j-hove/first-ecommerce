@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>A Book Cluttered Desk</title>
+
+    
+    <style>
+        .navbar-styles {
+            background-color: white;
+            position:fixed;
+            z-index:1;
+            width: 100%;
+        }
+        #button-addon2 {
+            background-color: maroon;
+        }
+        
+        .left-menu-ads-style {
+            height: 350px;
+            
+        }
+
+        .block-title {
+            border-bottom: 2px solid maroon;
+            padding: 5px 20px;
+            border-radius: 25px;
+            font-size: 25px;
+        }
+
+        .theme-color {
+            background-color: maroon;
+            color: white;
+
+        }
+
+        .theme-color a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .link-collections {
+            text-decoration: none;
+            color: black;
+        }
+
+        .link-collections:hover {
+            color: maroon;
+        }
+
+        .button-style  { 
+            color: maroon;
+            background-color: white;
+            text-decoration: none;
+            border: 1px solid white;
+        }
+
+        .button-style:hover  { 
+            
+            background-color: maroon;
+            color: white;
+        }
+
+        .header-style {
+            color:maroon;
+        }
+
+        #breadcrumb-styles a {
+          color: white;
+          text-decoration: none;
+        }
+
+
+        .accordion-button:not(.collapsed) {
+          background-color: white;
+          border: 0px solid white;
+          color: maroon;
+        }
+
+
+        .shop-account-style {
+          color: black;
+          text-decoration: none;
+        }
+
+        .shop-account-style:hover {
+          color: maroon;
+        }
+
+        .footer-style a:hover {
+          color: maroon;
+          text-decoration: none;
+        }
+
+        .btn-submit-style {
+          background-color: maroon;
+          color: white;
+
+        }
+
+        .btn-submit-style:hover {
+          background-color: white;
+          color: maroon;
+          border: 1px solid maroon;
+        }
+
+
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="navbar-styles border-bottom"">
+      <div class="container">
+          <!-- Upper Section -->
+  <!-- Navigation Category -->
+      <!-- Navbar -->
+      <header style="color:maroon;">
+          <div class="py-0 my-0">
+              <div class="container justify-content-center py-0 my-0">
+                  <nav class="navbar navbar-expand-lg navbar-light py-0 my-0" >
+                      <div class="container-fluid">
+                          <!-- Logo -->
+                          <a class="navbar-brand py-0 my-0" href="home.html" style="color:maroon;">
+                            <img src="img/headerimg/abcdlogo.jpg" alt="" width="100px" height="100px"/>
+                            <strong>A Book Cluttered Desk</strong>
+                          </a>
+                              <!-- Navigation Options -->
+                              <div class="collapse navbar-collapse" style="padding:10px;" id="navbarText">
+                                  <!-- Home, Browse and Blog -->
+                                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar2">
+                                  <li class="nav-item">
+                                      <a class="nav-link active" aria-current="page" href="home.html" style="color:maroon;">Home</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="product_listing.html" style="color:maroon;">Browse</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link" href="https://www.facebook.com/abcdbookshop" style="color:maroon;">Blog</a>
+                                  </li>
+                                  </ul>
+                                  <!-- Search -->
+                                  <div class="input-group mb-3" style="justify-content: end; padding-inline: 150px 20px;">
+                                      <input type="text" class="form-control" placeholder="Search books by keyword/title/author/ISBN" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                      <button class="btn btn-outline-secondary btn-submit-style" type="button" id="button-addon2" onclick="document.location='product_listing.html'"><i class="fas fa-search"></i></button>
+                                  </div>
+                                  <!-- Cart and Account Settings -->
+                                  <div class="navbar-text pt-0">
+                                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                          <li class="nav-item">
+                                          <a class="nav-link active pt-0 px-2" aria-current="page" href="#" onclick="document.location='cart.html'"><i class="shop-account-style fas fa-lg fa-shopping-cart"></i></a>
+                                          </li>
+                                          <li class="nav-item">
+                                              <a class="nav-link active pt-0 px-2" aria-current="page" href="#" onclick="document.location='signup.html'"><i class="shop-account-style fas fa-lg fa-user"></i></a>
+                                          </li>
+                                          </li>
+                                      </ul>
+                                    </div>
+                              </div>
+                          </div>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </header>
+        </div>
+        <br><br><br><br><br>
+        
+
+        <!-- breadcrumbs -->
+        <div class="bg-gradient" style="background-color:maroon;">
+          <div class="container px-5 py-2">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+              <ol id="breadcrumb-styles" class="breadcrumb my-3">
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page" style="color: white;">Collections</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+        
+
+    
+
+    
+    
+        <br/>
+        <br/>
+
+    
+        <!-- Lower Section -->
+        <div class="container">
+          <div class="row py-3">
+            <h3>Collections</h3>
+          </div>
+
+          <!-- sidebarfilter -->
+          <div class="row">
+            <div class="col-3" id="sidebar">
+              <div>
+                <div class="px-2 py-1 rounded-top bg-gradient" style="background-color: maroon; color: white; border: 1px solid maroon;"><strong>FILTER</strong></div>
+                <div class="px-2 py-3 rounded-bottom bg-white" style="color: maroon; border: 1px solid maroon;">
+                  <div class="accordion accordion-flush" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="p-3 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Price
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="input-group">
+                            <input type="text" aria-label="Min" class="form-control" placeholder="Min">
+                            <span class="input-group-text">-</span>
+                            <input type="text" aria-label="Max" class="form-control" placeholder="Max">
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="p-3 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Genre
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="container accordion-body">
+                          <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                          <label class="btn button-style" for="btn-check-2" style="border: 1px solid maroon;">Action</label>
+                          <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                          <label class="btn button-style" for="btn-check-2" style="border: 1px solid maroon;">Adventure</label>
+                          <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                          <label class="btn button-style" for="btn-check-2" style="border: 1px solid maroon;">Self-help</label>
+                          <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                          <label class="btn button-style" for="btn-check-2" style="border: 1px solid maroon;">Fiction</label>
+                          <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                          <label class="btn button-style" for="btn-check-2" style="border: 1px solid maroon;">Non-fiction</label>
+                          <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
+                          <label class="btn button-style" for="btn-check-2" style="border: 1px solid maroon;">Children's Book</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="p-3 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Availability
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              On-hand
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Pre-order
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="p-3 accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Condition
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              New
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Pre-loved: Like New
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Pre-loved: Gently Used
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Pre-loved: Good
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Pre-loved: Old
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!-- main-section -->
+            <div class="col-9" id="main">
+              <div class="row">
+                <div class="d-flex justify-content-end">
+                  <div class="px-3">Sort By</div>
+                  <select>
+                    <option>Relevance</option>
+                    <option>Product Name</option>
+                    <option>Publication Date</option>
+                    <option>Price</option>
+                    <option>Author</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="container" style="margin: 0px;">
+                  <div class="row">
+                      <div class="row row-cols-1 row-cols-md-4 g-4">
+                          <div class="col">
+                            <div class="card">
+                              <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                              <div class="card-body d-grid gap-0">
+                                  <h5 class="card-title booktitle">Fake</h5>
+                                  <p class="text-muted author">Robert Kiyosaki</p>
+                                  <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                              <div class="card">
+                                <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                <div class="card-body d-grid gap-1">
+                                    <h5 class="card-title booktitle">Fake</h5>
+                                    <p class="text-muted author">Robert Kiyosaki</p>
+                                    <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                    <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                    <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                <div class="card-body d-grid gap-1">
+                                    <h5 class="card-title booktitle">Fake</h5>
+                                    <p class="text-muted author">Robert Kiyosaki</p>
+                                    <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                    <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                    <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                <div class="card-body d-grid gap-1">
+                                    <h5 class="card-title booktitle">Fake</h5>
+                                    <p class="text-muted author">Robert Kiyosaki</p>
+                                    <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                    <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                <div class="card-body d-grid gap-1">
+                                    <h5 class="card-title booktitle">Fake</h5>
+                                    <p class="text-muted author">Robert Kiyosaki</p>
+                                    <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                    <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                <div class="card-body d-grid gap-1">
+                                    <h5 class="card-title booktitle">Fake</h5>
+                                    <p class="text-muted author">Robert Kiyosaki</p>
+                                    <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                    <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                    
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                <div class="card-body d-grid gap-1">
+                                    <h5 class="card-title booktitle">Fake</h5>
+                                    <p class="text-muted author">Robert Kiyosaki</p>
+                                    <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                    <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                  <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                  <div class="card-body d-grid gap-1">
+                                      <h5 class="card-title booktitle">Fake</h5>
+                                      <p class="text-muted author">Robert Kiyosaki</p>
+                                      <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                      <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                  <div class="card-body d-grid gap-1">
+                                      <h5 class="card-title booktitle">Fake</h5>
+                                      <p class="text-muted author">Robert Kiyosaki</p>
+                                      <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                      <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                  <div class="card-body d-grid gap-1">
+                                      <h5 class="card-title booktitle">Fake</h5>
+                                      <p class="text-muted author">Robert Kiyosaki</p>
+                                      <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                      <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                  <div class="card-body d-grid gap-1">
+                                      <h5 class="card-title booktitle">Fake</h5>
+                                      <p class="text-muted author">Robert Kiyosaki</p>
+                                      <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                      <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                  <div class="card-body d-grid gap-1">
+                                      <h5 class="card-title booktitle">Fake</h5>
+                                      <p class="text-muted author">Robert Kiyosaki</p>
+                                      <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                      <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                  <div class="card-body d-grid gap-1">
+                                      <h5 class="card-title booktitle">Fake</h5>
+                                      <p class="text-muted author">Robert Kiyosaki</p>
+                                      <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                      <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                  <div class="card-body d-grid gap-1">
+                                      <h5 class="card-title booktitle">Fake</h5>
+                                      <p class="text-muted author">Robert Kiyosaki</p>
+                                      <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                      <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                      
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <div class="card">
+                                  <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                  <div class="card-body d-grid gap-1">
+                                      <h5 class="card-title booktitle">Fake</h5>
+                                      <p class="text-muted author">Robert Kiyosaki</p>
+                                      <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                      <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col">
+                                  <div class="card">
+                                    <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body d-grid gap-1">
+                                        <h5 class="card-title booktitle">Fake</h5>
+                                        <p class="text-muted author">Robert Kiyosaki</p>
+                                        <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                        <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body d-grid gap-1">
+                                        <h5 class="card-title booktitle">Fake</h5>
+                                        <p class="text-muted author">Robert Kiyosaki</p>
+                                        <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                        <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                        
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body d-grid gap-1">
+                                        <h5 class="card-title booktitle">Fake</h5>
+                                        <p class="text-muted author">Robert Kiyosaki</p>
+                                        <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                        <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                        
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body d-grid gap-1">
+                                        <h5 class="card-title booktitle">Fake</h5>
+                                        <p class="text-muted author">Robert Kiyosaki</p>
+                                        <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                        <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="card">
+                                    <a href="product-page.html"><img src="img/product/imgtn2.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body d-grid gap-1">
+                                        <h5 class="card-title booktitle">Fake</h5>
+                                        <p class="text-muted author">Robert Kiyosaki</p>
+                                        <p class="text-danger"><span class="text-muted text-decoration-line-through">Php 999 </span> Php 500.00</p>
+                                        <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-shopping-cart"></i></div>Add To Cart</a></div>
+                                  <div class="d-flex justify-content-center"><a href="#" class="btn button-style"><div class="d-inline-flex px-2"><i class="fas fa-heart text-danger"></i></div>Wishlist</a></div>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+                  </div>
+
+                  <div style="padding: 15px;">
+                    <hr/>
+                    <div class="d-flex justify-content-end">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link button-style" href="#">Previous</a></li>
+                          <li class="page-item"><a class="page-link button-style" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link button-style" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link button-style" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link button-style" href="#">Next</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    
+                  </div>
+                  
+              </div>
+            </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+ 
+
+    
+
+
+
+
+
+
+    <!-- footer -->
+
+    <div class="theme-color bg-gradient">
+      <div class="container">
+          <footer class="py-5">
+            <div class="row">
+              <div class="col-2">
+                <h5>Site</h5>
+                <ul class="nav flex-column footer-style">
+                  <li class="nav-item mb-2"><a href="home.html" class="nav-link p-0">Home</a></li>
+                  <li class="nav-item mb-2"><a href="https://www.facebook.com/abcdbookshop" class="nav-link p-0">Blog</a></li>
+                  <li class="nav-item mb-2"><a href="genre.html" class="nav-link p-0">Category</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+                </ul>
+              </div>
+              <div class="col-2">
+                <h5>Others</h5>
+                <ul class="nav flex-column footer-style">
+                  <li class="nav-item mb-2"><a href="home.html" class="nav-link p-0">FAQs</a></li>
+                  <li class="nav-item mb-2"><a href="home.html" class="nav-link p-0">Product</a></li>
+                  <li class="nav-item mb-2"><a href="home.html" class="nav-link p-0">Services</a></li>
+                  <li class="nav-item mb-2"><a href="home.html" class="nav-link p-0">Careers</a></li>
+                </ul>
+              </div>
+              <div class="col-4 offset-2">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Monthly digest of whats new and exciting from us.</p>
+                  <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                    <button class="btn button-style" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+              <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+  </div>
+  <!-- Modal for subscribe button: pops out modal to subscribe-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content text-center"">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Subcribe to our newsletter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="d-flex modal-body text-muted h6 justify-text-center flex-wrap">
+          <div class="p-3">Sign up for our weekly newsletter to get the latest blogs, new arrivals and amazing offers delivered directly into your inbox.</div>
+          <div class="input-group mb-3 p-1">
+            <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary btn-submit-style" type="button" id="button-addon2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+      
+      
+      
+    <!-- js -->
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
